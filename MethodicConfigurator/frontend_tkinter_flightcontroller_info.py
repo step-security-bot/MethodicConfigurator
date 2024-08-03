@@ -19,24 +19,22 @@ from backend_flightcontroller import FlightController
 
 #from frontend_tkinter_base import show_tooltip
 from frontend_tkinter_base import ProgressWindow
-from frontend_tkinter_base import BaseWindow
 
 from version import VERSION
 
 
-class FlightControllerInfoWindow(BaseWindow):
+class FlightControllerInfoWindow(ProgressWindow):
     """
     Display flight controller hardware, firmware and parameter information
     """
     def __init__(self, flight_controller: FlightController):
-        super().__init__()
-        self.root.title("ArduPilot methodic configurator " + VERSION + " - Flight Controller Info")
-        self.root.geometry("500x350")  # Adjust the window size as needed
+        super().__init__(tk.Tk(), "ArduPilot methodic configurator " + VERSION + " - Flight Controller Info", "Downloaded {} of {} parameters")
+        self.progress_window.geometry("500x350")  # Adjust the window size as needed
         self.flight_controller = flight_controller
         self.param_default_values = {}
 
         # Create a frame to hold all the labels and text fields
-        self.info_frame = ttk.Frame(self.main_frame)
+        self.info_frame = ttk.Frame(self.progress_window)
         self.info_frame.pack(fill=tk.BOTH, padx=20, pady=20)
 
         # Dynamically create labels and text fields for each attribute
@@ -66,15 +64,15 @@ class FlightControllerInfoWindow(BaseWindow):
         logging_info(f"Flight Controller USB vendor ID: {flight_controller.info.vendor}")
         logging_info(f"Flight Controller USB product ID: {flight_controller.info.product}")
 
-        self.root.after(50, self.download_flight_controller_parameters()) # 50 milliseconds
-        self.root.mainloop()
+        self.progress_window.after(50, self.download_flight_controller_parameters()) # 50 milliseconds
+        self.progress_window.mainloop()
 
     def download_flight_controller_parameters(self):
         param_download_progress_window = ProgressWindow(self.root, "Downloading FC parameters",
                                                         "Downloaded {} of {} parameters")
         self.flight_controller.fc_parameters, self.param_default_values = self.flight_controller.download_params(
-            param_download_progress_window.update_progress_bar)
-        param_download_progress_window.destroy()  # for the case that '--device test' and there is no real FC connected
+            self.update_progress_bar)
+        self.destroy()  # for the case that '--device test' and there is no real FC connected
         self.root.destroy()
 
     def get_param_default_values(self):
