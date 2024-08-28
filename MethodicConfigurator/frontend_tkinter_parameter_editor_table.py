@@ -35,7 +35,7 @@ from frontend_tkinter_base import get_widget_font
 
 from frontend_tkinter_connection_selection import PairTupleCombobox
 
-from frontend_tkinter_combobox_autocomplete import Combobox_Autocomplete
+from frontend_tkinter_combobox_autocomplete import ComboboxAutocomplete
 
 from annotate_params import Par
 
@@ -436,7 +436,7 @@ class ParameterEditorTable(ScrollFrame):  # pylint: disable=too-many-ancestors
         instruction_label.pack(pady=5)
 
         # ComboBox for dynamic filtering
-        parameter_name_combobox = Combobox_Autocomplete(add_parameter_window, self.local_filesystem.doc_dict.keys(), highlightthickness=1, startswith_match=False)
+        parameter_name_combobox = ComboboxAutocomplete(add_parameter_window, self.local_filesystem.doc_dict.keys(), highlightthickness=1, startswith_match=False)
         parameter_name_combobox.pack(padx=5, pady=5)
         parameter_name_combobox.focus()
 
