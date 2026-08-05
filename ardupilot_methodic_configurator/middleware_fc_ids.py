@@ -23,7 +23,7 @@ VID_VENDOR_DICT: dict[int, list[str]] = {
 
 # Maps USB VID,PID tuple to product name(s)
 VID_PID_PRODUCT_DICT: dict[tuple[int, int], list[str]] = {
-    (0x1209, 0x5741): ["3DR-L431-ASAUAV", "AcctonGodwit_GA1", "ACNS-CM4Pilot", "ACNS-F405AIO", "AEDROXH7", "AeroCogito-H7Digital", "AeroFox-GNSS_F9P", "AEROFOX-H7", "AeroFox-PMU", "Aeromind6X", "AET-H743-Basic", "airbotf4", "AIRBRAINH743", "AIRLink", "Airvolute-DCS2", "AnyleafH7", "Aocoda-RC-H743Dual", "AR-F407SmartBat", "ARK_CANNODE", "ARK_FPV", "ARK_PI6X", "ARKV6S", "ARKV6X", "Atlas-Control", "AtomRCF405NAVI", "ATOMRCF405NAVI-Deluxe", "BCubeF745v2", "BeastF7", "BeastF7v2", "BeastH7", "BeastH7v2", "BETAFPV-F405", "BirdCANdy", "BlitzF745", "BlitzF745AIO", "BlitzH743Pro", "BlitzMiniF745", "BlitzWingH743", "BotBloxDroneNet", "BOTWINGF405", "BrahmaF4", "BROTHERHOBBYF405v3", "BROTHERHOBBYH743", "C-RTK2-HP", "CarbonixF405", "CBU-H7-LC-Stamp", "CBU-H7-Stamp", "CORVON405V2_1", "CORVON743V1", "CORVON743V2", "CORVON_V5", "CrazyF405", "crazyflie2", "CSKY405", "CSKY_PMU", "CUAV-7-Nano", "CUAV-Nora", "CUAV-Pixhack-v3", "CUAV-V6X-v2", "CUAV-X25-EVO", "CUAV-X7", "CUAVv5", "CUAVv5Nano", "CubeNode", "CubeRedSecondary", "CubeRedSecondary-IO", "CubeSolo", "CyberX-v10", "DAKEFPVF405", "DAKEFPVH743", "DAKEFPVH743_SLIM", "DAKEFPVH743Pro", "DevEBoxH7v2", "DroneerF405", "DrotekP3Pro", "F35Lightning", "F4BY_H743", "flycore", "FlyingMoonF407", "FlyingMoonF427", "FlyingMoonH743", "FlysparkF4", "FlywooF405HD-AIOv2", "FlywooF405Pro", "FlywooF405S-AIO", "FlywooF745", "FlywooF745Nano", "FlywooH743Pro", "fmuv2", "fmuv3", "fmuv5", "FoxeerF405v2", "FoxeerH743v1", "FreeflyRTK", "GEPRC_TAKER_H743", "GEPRCF745BTHD", "GPILOT_P1", "UltraBlue", "%BOARD%", "HEEWING-F405", "HEEWING-F405v2", "Here4AP", "Here4FC", "HolybroF4_PMU", "HWH7", "IFLIGHT_2RAW_H7", "JFB100", "JFB-110", "JFB200", "JHEM_JHEF405", "JHEMCU-GSF405A", "JHEMCU-GSF405A-RX2", "JHEMCU-H743HD", "JHEMCUF405PRO", "JHEMCUF405WING", "JPilot-C", "KakuteF4", "KakuteF4-Wing", "KakuteF4Mini", "KakuteF7", "KakuteF7Mini", "KakuteH7", "KakuteH7-Wing", "KakuteH7Mini", "KakuteH7Mini-Nand", "KakuteH7v2", "KARSHAKH743VTOL", "KT-FMU-F1", "LongBowF405WING", "LumenierLUXF765-NDAA", "luminousbee4", "luminousbee5", "MambaF405-2022", "MambaF405v2", "MambaH743v4", "MatekF405", "MatekF405-CAN", "MatekF405-STD", "MatekF405-TE", "MatekF405-Wing", "MatekF765-SE", "MatekF765-Wing", "MatekG474", "MatekH743", "MatekH7A3", "MatekH7A3-Wing", "MazzyStarDrone", "MFE_PDB_CAN", "MFE_POS3_CAN", "MFT-SEMA100", "MicoAir405Mini", "MicoAir405v2", "MicoAir743", "MicoAir743-AIO", "MicoAir743-Lite", "MicoAir743v2", "mindpx-v2", "mini-pix", "modalai_fc-v1", "Morakot", "mRo-M10095", "mRoCANPWM-M10126", "mRoControlZeroClassic", "mRoControlZeroF7", "mRoControlZeroH7", "mRoControlZeroOEMH7", "mRoCZeroOEMH7", "mRoNexus", "mRoPixracerPro", "mRoX21", "mRoX21-777", "MUPilot", "NarinFC-H5", "NarinFC-H7", "NarinFC-X3", "Nucleo-G491", "Nucleo-L476", "Nucleo-L496", "NucleoH743", "NucleoH753ZI", "NucleoH755", "NxtPX4v2", "omnibusf4", "omnibusf4pro", "omnibusf4pro-one", "omnibusf4v6", "OMNIBUSF7V2", "OmnibusNanoV6", "ORBITH743", "ORBITH743v2", "OrqaF405Pro", "OrqaH7QuadCore", "PH4-mini", "PilotGaeaSH7V1", "PixC4-Jetson", "PixFlamingo", "Pixhawk1", "Pixhawk1-1M", "Pixhawk4", "Pixhawk6X", "Pixhawk6X-PPPGW", "PixPilot-C3", "PixPilot-V3", "PixPilot-V6", "PixPilot-V6PRO", "Pixracer", "PixSurveyA1", "PixSurveyA1-IND", "PixSurveyA2-IND", "PrincipIoTH7Pi", "QioTekAdeptF407", "QioTekZealotF427", "QioTekZealotH743", "R9Pilot", "RadiolinkF405", "RadiolinkPIX6", "RADIX2HD", "ReaperF745", "ResoluteH7", "revo-mini", "revo-mini-i2c", "revo-mini-sd", "rFCU", "rGNSS", "SaamPixV1_1", "SDMODELH7V1", "SDMODELH7V2", "SequreH743", "Sierra-F405", "Sierra-F412", "Sierra-F9P", "Sierra-L431", "Sierra-PrecisionPoint", "Sierra-TrueNavIC", "Sierra-TrueNavPro", "Sierra-TrueNavPro-G4", "Sierra-TrueNorth", "Sierra-TrueSpeed", "SIYI-UniFC-6-PICO", "SIYI_N7", "SkyDroid-S3", "SkyRukh_Surge_H7", "SkySakuraH743", "SkystarsF405v2", "SkystarsH7HD", "SkystarsH7HDv2", "skyviper-f412-rev1", "skyviper-journey", "skyviper-v2450", "sparknavi-blue", "sparky2", "SPEDIXF405", "SPEDIXH743", "speedybeef4", "SpeedyBeeF405AIO", "SpeedyBeeF405Mini", "SpeedyBeeF405WING", "speedybeef4v3", "speedybeef4v4", "speedybeef4v5", "SPRacingH7", "SPRacingH7RF", "StellarF4", "StellarF4V2", "StellarH7V2", "SuccexF4", "SULILGH7-P1-P2", "SVehicle-E2", "sw-boom-f407", "sw-nav-f405", "sw-spar-f407", "Swan-K1", "TBS-Colibri-F7", "TBS-L431-BattMon", "TBS-L431-CurrMon", "TBS-L431-PWM", "TBS_LUCID_H7", "TBS_LUCID_H7_OEM", "TBS_LUCID_H7_WING", "TBS_LUCID_H7_WING_AIO", "TBS_LUCID_H7V3", "TBS_LUCID_PRO", "TMotorH743", "uav-dev-auav-g4", "uav-dev-fc-um982", "uav-dev-powermodule", "uav-dev_m10s", "VM-L431-BatteryTag", "VM-L431-BMS", "VM-L431-Periph-Pico", "VM-L431-SRV-Hub-4CHP", "VUAV-TinyV7", "VUAV-V7pro", "X-MAV-AP-H743r1", "X-MAV-AP-H743v2", "YARI_GNSS", "YARIV6X", "YJUAV_A6", "YJUAV_A6SE", "YJUAV_A6SE_H743", "YJUAV_A6Ultra", "ZeroOneX6", "ZeroOneX6_Air"],
+    (0x1209, 0x5741): ["3DR-L431-ASAUAV", "AcctonGodwit_GA1", "ACNS-CM4Pilot", "ACNS-F405AIO", "AEDROXH7", "AeroCogito-H7Digital", "AeroFox-GNSS_F9P", "AEROFOX-H7", "AeroFox-PMU", "Aeromind6X", "AET-H743-Basic", "AET_H743_Air", "airbotf4", "AIRBRAINH743", "AIRLink", "Airvolute-DCS2", "AnyleafH7", "Aocoda-RC-H743Dual", "AR-F407SmartBat", "ARK_CANNODE", "ARK_FPV", "ARK_PI6X", "ARKV6S", "ARKV6X", "Atlas-Control", "AtomRCF405NAVI", "ATOMRCF405NAVI-Deluxe", "BCubeF745v2", "BeastF7", "BeastF7v2", "BeastH7", "BeastH7v2", "BETAFPV-F405", "BirdCANdy", "BlitzF745", "BlitzF745AIO", "BlitzH743Pro", "BlitzMiniF745", "BlitzWingH743", "BotBloxDroneNet", "BOTWINGF405", "BrahmaF4", "BROTHERHOBBYF405v3", "BROTHERHOBBYH743", "C-RTK2-HP", "CarbonixF405", "CBU-H7-LC-Stamp", "CBU-H7-Stamp", "CORVON405V2_1", "CORVON743V1", "CORVON743V2", "CORVON_V5", "CrazyF405", "crazyflie2", "CSKY405", "CSKY_PMU", "CUAV-7-Nano", "CUAV-Nora", "CUAV-Pixhack-v3", "CUAV-V6X-v2", "CUAV-X25-EVO", "CUAV-X25-MEGA", "CUAV-X7", "CUAVv5", "CUAVv5Nano", "CubeNode", "CubeRedSecondary", "CubeRedSecondary-IO", "CubeSolo", "CyberX-v10", "DAKEFPVF405", "DAKEFPVH743", "DAKEFPVH743_SLIM", "DAKEFPVH743Pro", "DevEBoxH7v2", "DroneerF405", "DrotekP3Pro", "F35Lightning", "F4BY_H743", "flycore", "FlyingMoonF407", "FlyingMoonF427", "FlyingMoonH743", "FlysparkF4", "FlywooF405HD-AIOv2", "FlywooF405Pro", "FlywooF405S-AIO", "FlywooF745", "FlywooF745Nano", "FlywooH743Pro", "fmuv2", "fmuv3", "fmuv5", "FoxeerF405v2", "FoxeerH743v1", "FreeflyRTK", "GEPRC_TAKER_H743", "GEPRCF745BTHD", "GPILOT_P1", "UltraBlue", "%BOARD%", "HCR-523", "HEEWING-F405", "HEEWING-F405v2", "Here4AP", "Here4FC", "HolybroF4_PMU", "HWH7", "IFLIGHT_2RAW_H7", "JFB100", "JFB-110", "JFB200", "JHEM_JHEF405", "JHEMCU-GSF405A", "JHEMCU-GSF405A-RX2", "JHEMCU-H743HD", "JHEMCUF405PRO", "JHEMCUF405WING", "JPilot-C", "KakuteF4", "KakuteF4-Wing", "KakuteF4Mini", "KakuteF7", "KakuteF7Mini", "KakuteH7", "KakuteH7-Wing", "KakuteH7Mini", "KakuteH7Mini-Nand", "KakuteH7v2", "KARSHAKH743VTOL", "KT-FMU-F1", "LongBowF405WING", "LumenierLUXF765-NDAA", "luminousbee4", "luminousbee5", "MambaF405-2022", "MambaF405v2", "MambaH743v4", "MatekF405", "MatekF405-CAN", "MatekF405-STD", "MatekF405-TE", "MatekF405-Wing", "MatekF765-SE", "MatekF765-Wing", "MatekG474", "MatekH743", "MatekH7A3", "MatekH7A3-Wing", "MazzyStarDrone", "MFE_PDB_CAN", "MFE_POS3_CAN", "MFT-SEMA100", "MicoAir405Mini", "MicoAir405v2", "MicoAir743", "MicoAir743-AIO", "MicoAir743-Lite", "MicoAir743v2", "mindpx-v2", "mini-pix", "modalai_fc-v1", "Morakot", "mRo-M10095", "mRoCANPWM-M10126", "mRoControlZeroClassic", "mRoControlZeroF7", "mRoControlZeroH7", "mRoControlZeroOEMH7", "mRoCZeroOEMH7", "mRoNexus", "mRoPixracerPro", "mRoX21", "mRoX21-777", "MUPilot", "NarinFC-H5", "NarinFC-H7", "NarinFC-X3", "Nucleo-G491", "Nucleo-L476", "Nucleo-L496", "NucleoH743", "NucleoH753ZI", "NucleoH755", "NxtPX4v2", "omnibusf4", "omnibusf4pro", "omnibusf4pro-one", "omnibusf4v6", "OMNIBUSF7V2", "OmnibusNanoV6", "ORBITH743", "ORBITH743v2", "OrqaF405Pro", "OrqaH7QuadCore", "PH4-mini", "PilotGaeaSH7V1", "PixC4-Jetson", "PixFlamingo", "Pixhawk1", "Pixhawk1-1M", "Pixhawk4", "Pixhawk6X", "Pixhawk6X-PPPGW", "PixPilot-C3", "PixPilot-V3", "PixPilot-V6", "PixPilot-V6PRO", "Pixracer", "PixSurveyA1", "PixSurveyA1-IND", "PixSurveyA2-IND", "PrincipIoTH7Pi", "QioTekAdeptF407", "QioTekZealotF427", "QioTekZealotH743", "R9Pilot", "RadiolinkF405", "RadiolinkPIX6", "RADIX2HD", "ReaperF745", "ResoluteH7", "revo-mini", "revo-mini-i2c", "revo-mini-sd", "rFCU", "rGNSS", "SaamPixV1_1", "SDMODELH7V1", "SDMODELH7V2", "SequreH743", "Sierra-F405", "Sierra-F412", "Sierra-F9P", "Sierra-L431", "Sierra-PrecisionPoint", "Sierra-TrueNavIC", "Sierra-TrueNavPro", "Sierra-TrueNavPro-G4", "Sierra-TrueNorth", "Sierra-TrueSpeed", "SIMPLIFLYH7", "SIYI-UniFC-6-PICO", "SIYI_N7", "SkyDroid-S3", "SkyRukh_Surge_H7", "SkySakuraH743", "SkystarsF405v2", "SkystarsH7HD", "SkystarsH7HDv2", "skyviper-f412-rev1", "skyviper-journey", "skyviper-v2450", "sparknavi-blue", "sparky2", "SPEDIXF405", "SPEDIXH743", "speedybeef4", "SpeedyBeeF405AIO", "SpeedyBeeF405Mini", "SpeedyBeeF405WING", "speedybeef4v3", "speedybeef4v4", "speedybeef4v5", "SPRacingH7", "SPRacingH7RF", "StellarF4", "StellarF4V2", "StellarH7V2", "SuccexF4", "SULILGH7-P1-P2", "SVehicle-E2", "sw-boom-f407", "sw-nav-f405", "sw-spar-f407", "Swan-K1", "TBS-Colibri-F7", "TBS-L431-BattMon", "TBS-L431-CurrMon", "TBS-L431-PWM", "TBS_LUCID_H7", "TBS_LUCID_H7_OEM", "TBS_LUCID_H7_WING", "TBS_LUCID_H7_WING_AIO", "TBS_LUCID_H7V3", "TBS_LUCID_PRO", "TMotorH743", "uav-dev-auav-g4", "uav-dev-fc-um982", "uav-dev-powermodule", "uav-dev_m10s", "VM-L431-BatteryTag", "VM-L431-BMS", "VM-L431-Periph-Pico", "VM-L431-SRV-Hub-4CHP", "VUAV-TinyV7", "VUAV-V7pro", "X-MAV-AP-H743r1", "X-MAV-AP-H743v2", "YARI_GNSS", "YARIV6X", "YJUAV_A6", "YJUAV_A6SE", "YJUAV_A6SE_H743", "YJUAV_A6Ultra", "ZeroOneX6", "ZeroOneX6_Air"],
     (0x26AC, 0x1124): ["CZOEMrevG"],
     (0x2DAE, 0x1011): ["CubeBlack", "CubeGreen-solo"],
     (0x2DAE, 0x1101): ["CubeBlack+"],
@@ -47,7 +47,7 @@ VID_PID_PRODUCT_DICT: dict[tuple[int, int], list[str]] = {
     (0x27AC, 0x1351): ["VRUBrain-v51"],
 }
 
-# Maps 16-bit APJ board ID to board name(s) for 330 supported boards
+# Maps 16-bit APJ board ID to board name(s) for 334 supported boards
 APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     1165: ["3DR-L431-ASAUAV"],
     1124: ["3DRControlZeroG"],
@@ -61,6 +61,7 @@ APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     1080: ["AeroFox-PMU"],
     1850: ["Aeromind6X"],
     2024: ["AET-H743-Basic"],
+    2509: ["AET_H743_Air"],
     128: ["airbotf4"],
     1209: ["AIRBRAINH743"],
     55: ["AIRLink"],
@@ -110,6 +111,7 @@ APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     9: ["CUAV-Pixhack-v3", "CubeBlack", "CubeGreen-solo", "CubePurple", "CubeSolo", "fmuv2", "fmuv3", "mRoX21", "Pixhawk1", "Pixhawk1-1M", "skyviper-f412-rev1", "skyviper-journey", "skyviper-v2450"],
     7001: ["CUAV-V6X-v2"],
     7002: ["CUAV-X25-EVO"],
+    7004: ["CUAV-X25-MEGA"],
     1010: ["CUAV-X7"],
     50: ["CUAVv5", "CUAVv5Nano", "fmuv5", "PH4-mini", "Pix32v5", "Pixhawk4", "Swan-K1", "TBS-Colibri-F7"],
     1003: ["CubeBlack+"],
@@ -153,6 +155,7 @@ APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     1275: ["GPILOT_P1"],
     1071: ["GreenSightUltraBlue"],
     146: ["H757I_EVAL", "H757I_EVAL_intf"],
+    1957: ["HCR-523"],
     1119: ["HEEWING-F405", "HEEWING-F405v2"],
     1043: ["Here4AP", "Here4FC"],
     5401: ["HolybroF4_PMU"],
@@ -277,6 +280,7 @@ APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     5301: ["Sierra-TrueNavPro-G4"],
     1093: ["Sierra-TrueNorth"],
     1094: ["Sierra-TrueSpeed"],
+    1221: ["SIMPLIFLYH7"],
     1215: ["SIYI-UniFC-6-PICO"],
     1123: ["SIYI_N7"],
     11300: ["SkyDroid-S3"],
@@ -340,7 +344,7 @@ APJ_BOARD_ID_NAME_DICT: dict[int, list[str]] = {
     5600: ["ZeroOneX6", "ZeroOneX6_Air"],
 }
 
-# Maps 16-bit APJ board ID to board vendor for 330 supported boards
+# Maps 16-bit APJ board ID to board vendor for 334 supported boards
 APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     1165: ["ArduPilot"],  # 3DR-L431-ASAUAV
     1124: ["3DR"],  # 3DRControlZeroG
@@ -354,6 +358,7 @@ APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     1080: ["ArduPilot"],  # AeroFox-PMU
     1850: ["ArduPilot"],  # Aeromind6X
     2024: ["AET"],  # AET-H743-Basic
+    2509: ["AET"],  # AET_H743_Air
     128: ["ArduPilot"],  # airbotf4
     1209: ["ArduPilot"],  # AIRBRAINH743
     55: ["ArduPilot"],  # AIRLink
@@ -403,6 +408,7 @@ APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     9: ["ArduPilot", "Hex/ProfiCNC"],  # CUAV-Pixhack-v3, CubeBlack, CubeGreen-solo, CubePurple, CubeSolo, fmuv2, fmuv3, mRoX21, Pixhawk1, Pixhawk1-1M, skyviper-f412-rev1, skyviper-journey, skyviper-v2450
     7001: ["ArduPilot"],  # CUAV-V6X-v2
     7002: ["ArduPilot"],  # CUAV-X25-EVO
+    7004: ["ArduPilot"],  # CUAV-X25-MEGA
     1010: ["ArduPilot"],  # CUAV-X7
     50: ["ArduPilot", "Holybro"],  # CUAVv5, CUAVv5Nano, fmuv5, PH4-mini, Pix32v5, Pixhawk4, Swan-K1, TBS-Colibri-F7
     1003: ["Hex/ProfiCNC"],  # CubeBlack+
@@ -446,6 +452,7 @@ APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     1275: ["ArduPilot"],  # GPILOT_P1
     1071: ["GreenSight"],  # GreenSightUltraBlue
     146: ["ArduPilot"],  # H757I_EVAL, H757I_EVAL_intf
+    1957: ["ArduPilot"],  # HCR-523
     1119: ["ArduPilot"],  # HEEWING-F405, HEEWING-F405v2
     1043: ["ArduPilot"],  # Here4AP, Here4FC
     5401: ["ArduPilot"],  # HolybroF4_PMU
@@ -570,6 +577,7 @@ APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     5301: ["ArduPilot"],  # Sierra-TrueNavPro-G4
     1093: ["ArduPilot"],  # Sierra-TrueNorth
     1094: ["ArduPilot"],  # Sierra-TrueSpeed
+    1221: ["ArduPilot"],  # SIMPLIFLYH7
     1215: ["ArduPilot"],  # SIYI-UniFC-6-PICO
     1123: ["ArduPilot"],  # SIYI_N7
     11300: ["ArduPilot"],  # SkyDroid-S3
@@ -633,7 +641,7 @@ APJ_BOARD_ID_VENDOR_DICT: dict[int, list[str]] = {
     5600: ["ArduPilot"],  # ZeroOneX6, ZeroOneX6_Air
 }
 
-# Maps 16-bit APJ board ID to MCU series for 330 supported boards
+# Maps 16-bit APJ board ID to MCU series for 334 supported boards
 APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     1165: ["STM32L431"],  # 3DR-L431-ASAUAV
     1124: ["STM32H7xx"],  # 3DRControlZeroG
@@ -647,6 +655,7 @@ APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     1080: ["STM32L431"],  # AeroFox-PMU
     1850: ["STM32H7xx"],  # Aeromind6X
     2024: ["STM32H7xx"],  # AET-H743-Basic
+    2509: ["STM32H7xx"],  # AET_H743_Air
     128: ["STM32F4xx"],  # airbotf4
     1209: ["STM32H7xx"],  # AIRBRAINH743
     55: ["STM32F7xx"],  # AIRLink
@@ -696,6 +705,7 @@ APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     9: ["STM32F4xx"],  # CUAV-Pixhack-v3, CubeBlack, CubeGreen-solo, CubePurple, CubeSolo, fmuv2, fmuv3, mRoX21, Pixhawk1, Pixhawk1-1M, skyviper-f412-rev1, skyviper-journey, skyviper-v2450
     7001: ["STM32H7xx"],  # CUAV-V6X-v2
     7002: ["STM32H7xx"],  # CUAV-X25-EVO
+    7004: ["STM32H7xx"],  # CUAV-X25-MEGA
     1010: ["STM32H7xx"],  # CUAV-X7
     50: ["STM32F7xx"],  # CUAVv5, CUAVv5Nano, fmuv5, PH4-mini, Pix32v5, Pixhawk4, Swan-K1, TBS-Colibri-F7
     1003: ["STM32F4xx"],  # CubeBlack+
@@ -739,6 +749,7 @@ APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     1275: ["STM32H7xx"],  # GPILOT_P1
     1071: ["STM32H7xx"],  # GreenSightUltraBlue
     146: ["STM32H7xx"],  # H757I_EVAL, H757I_EVAL_intf
+    1957: ["STM32G4xx"],  # HCR-523
     1119: ["STM32F4xx"],  # HEEWING-F405, HEEWING-F405v2
     1043: ["STM32H7xx"],  # Here4AP, Here4FC
     5401: ["STM32F4xx"],  # HolybroF4_PMU
@@ -863,6 +874,7 @@ APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     5301: ["STM32G4xx"],  # Sierra-TrueNavPro-G4
     1093: ["STM32L431"],  # Sierra-TrueNorth
     1094: ["STM32L431"],  # Sierra-TrueSpeed
+    1221: ["STM32H7xx"],  # SIMPLIFLYH7
     1215: ["STM32H7xx"],  # SIYI-UniFC-6-PICO
     1123: ["STM32H7xx"],  # SIYI_N7
     11300: ["STM32H7xx"],  # SkyDroid-S3
@@ -926,16 +938,16 @@ APJ_BOARD_ID_MCU_SERIES_DICT: dict[int, list[str]] = {
     5600: ["STM32H7xx"],  # ZeroOneX6, ZeroOneX6_Air
 }
 
-# Maps MCU series to 16-bit APJ board ID for 330 supported boards
+# Maps MCU series to 16-bit APJ board ID for 334 supported boards
 MCU_SERIES_APJ_BOARD_ID_DICT: dict[str, list[int]] = {
     "CKS32F4xx": [1134, 1065],  # AR-F407SmartBat, QioTekAdeptF407
     "STM32F4xx": [1115, 1116, 128, 83, 1078, 1143, 1125, 1044, 2501, 1184, 5811, 1085, 1064, 1187, 1177, 12, 1158, 1212, 9, 1003, 1190, 5800, 13, 135, 20, 1530, 1067, 1068, 1361, 1180, 1137, 1099, 1157, 1119, 5401, 1081, 1059, 1412, 1169, 122, 5406, 1030, 1422, 11, 1038, 1019, 125, 1014, 1054, 127, 6101, 1161, 1150, 88, 3, 1002, 131, 137, 133, 1155, 1140, 1096, 1076, 1107, 1021, 1417, 124, 1316, 1052, 1055, 1034, 1095, 1201, 130, 1197, 134, 5271, 1135, 1106, 1082, 1136, 5272, 1500, 1504, 1011, 6001, 6002, 6000, 5251, 212, 213, 1151, 1152, 1154, 1910, 1351, 1235],  # ACNS-CM4Pilot, ACNS-F405AIO, airbotf4, ARK_CANNODE, AtomRCF405NAVI, ATOMRCF405NAVI-Deluxe, BETAFPV-F405, BirdCANdy, BOTWINGF405, BrahmaF4, BROTHERHOBBYF405v3, C-RTK2-HP, CarbonixF405, CORVON405V2_1, CrazyF405, crazyflie2, CSKY405, CSKY_PMU, CUAV-Pixhack-v3, CubeBlack, CubeGreen-solo, CubePurple, CubeSolo, fmuv2, fmuv3, mRoX21, Pixhawk1, Pixhawk1-1M, skyviper-f412-rev1, skyviper-journey, skyviper-v2450, CubeBlack+, DAKEFPVF405, DroneerF405, DrotekP3Pro, F35Lightning, F4BY, F4BY_F427, FlyingMoonF407, FlyingMoonF427, FlysparkF4, FlywooF405HD-AIOv2, FlywooF405Pro, FlywooF405S-AIO, FoxeerF405v2, HEEWING-F405, HEEWING-F405v2, HolybroF4_PMU, JHEM_JHEF405, JHEMCU-GSF405A, JHEMCU-GSF405A-RX2, JHEMCUF405PRO, JHEMCUF405WING, KakuteF4, KakuteF4-Wing, KakuteF4Mini, LongBowF405WING, luminousbee4, Pixracer, MambaF405-2022, MambaF405v2, MatekF405, MatekF405-STD, MatekF405-CAN, MatekF405-TE, MatekF405-Wing, MFE_POS3_CAN, MicoAir405Mini, MicoAir405v2, mindpx-v2, mini-pix, omnibusf4, omnibusf4pro, omnibusf4pro-one, omnibusf4v6, OmnibusNanoV6, OrqaF405Pro, PixPilot-C3, PixPilot-V3, PixSurveyA1, PixSurveyA1-IND, QioTekZealotF427, RadiolinkF405, revo-mini, revo-mini-i2c, revo-mini-sd, SaamPixV1_1, Sierra-F405, Sierra-F412, Sierra-F9P, Sierra-PrecisionPoint, SkystarsF405v2, sparky2, SPEDIXF405, speedybeef4, SpeedyBeeF405AIO, SpeedyBeeF405Mini, SpeedyBeeF405WING, speedybeef4v3, speedybeef4v4, speedybeef4v5, StellarF4, StellarF4V2, SuccexF4, sw-boom-f407, sw-nav-f405, sw-spar-f407, TBS_LUCID_PRO, thepeach-k1, thepeach-r1, VRBrain-v51, VRBrain-v52, VRBrain-v54, VRCore-v10, VRUBrain-v51, YARI_GNSS
     "STM32F7xx": [55, 1511, 1026, 1057, 1164, 1117, 1163, 1211, 50, 120, 1027, 1042, 1028, 1501, 1084, 123, 145, 4500, 143, 188, 41775, 141, 136, 1222, 121, 1131, 51, 1008, 1410, 1074],  # AIRLink, BCubeF745v2, BeastF7, BeastF7v2, BlitzF745, BlitzF745AIO, BlitzMiniF745, CORVON_V5, CUAVv5, CUAVv5Nano, fmuv5, PH4-mini, Pix32v5, Pixhawk4, Swan-K1, TBS-Colibri-F7, CubeYellow, FlywooF745, FlywooF745Nano, FreeflyRTK, GEPRCF745BTHD, JFB100, KakuteF7, KakuteF7Mini, LumenierLUXF765-NDAA, MatekF765-SE, MatekF765-Wing, MazzyStarDrone, modalai_fc-v1, mRoControlZeroF7, mRoX21-777, MUPilot, OMNIBUSF7V2, PixFlamingo-F767, Pixhawk5X, R9Pilot, RadiolinkPIX6, ReaperF745
     "STM32G474": [1170],  # MatekG474
     "STM32G491": [1040],  # Nucleo-G491
-    "STM32G4xx": [1041, 1098, 1103, 5301, 5234, 5233],  # mRo-M10095, mRoCANPWM-M10126, rGNSS, Sierra-TrueNavPro-G4, uav-dev-auav-g4, uav-dev-powermodule
+    "STM32G4xx": [1957, 1041, 1098, 1103, 5301, 5234, 5233],  # HCR-523, mRo-M10095, mRoCANPWM-M10126, rGNSS, Sierra-TrueNavPro-G4, uav-dev-auav-g4, uav-dev-powermodule
     "STM32H7": [2815],  # SkyRukh_Surge_H7
-    "STM32H7xx": [1124, 7120, 1198, 4300, 7110, 1850, 2024, 1209, 5200, 1146, 5210, 59, 58, 61, 57, 1227, 1025, 1056, 1162, 1168, 1148, 5810, 1182, 1156, 1189, 1229, 7000, 1009, 7001, 7002, 1010, 1079, 140, 1033, 1063, 1069, 1409, 1070, 5830, 1193, 1208, 1194, 1061, 139, 1531, 1218, 1112, 1181, 1089, 1502, 1275, 1071, 146, 1043, 1223, 1173, 1110, 1200, 1411, 1214, 1048, 1105, 1058, 4002, 1315, 1250, 1029, 1073, 1013, 1149, 1228, 2000, 1166, 1176, 1202, 1179, 1210, 1022, 1023, 1024, 1015, 1017, 1188, 1183, 1199, 1207, 1159, 1191, 1219, 1204, 1213, 1032, 56, 53, 1408, 1083, 1160, 6104, 1248, 1036, 1118, 1445, 1102, 1111, 1167, 1195, 1215, 1123, 11300, 2714, 1075, 1362, 1196, 1060, 1108, 1503, 2005, 6110, 5250, 5255, 5253, 5254, 5256, 1138, 5230, 7101, 7100, 1203, 1174, 1234, 1113, 1127, 1141, 1144, 5600],  # 3DRControlZeroG, AcctonGodwit_GA1, AEDROXH7, AeroCogito-H7Digital, AEROFOX-H7, Aeromind6X, AET-H743-Basic, AIRBRAINH743, Airvolute-DCS2, AnyleafH7, Aocoda-RC-H743Dual, ARK_FPV, ARK_PI6X, ARKV6S, ARKV6X, Atlas-Control, BeastH7, BeastH7v2, BlitzH743Pro, BlitzWingH743, BotBloxDroneNet, BROTHERHOBBYH743, CBU-H7-LC-Stamp, CBU-H7-Stamp, CORVON743V1, CORVON743V2, CUAV-7-Nano, CUAV-Nora, CUAV-V6X-v2, CUAV-X25-EVO, CUAV-X7, CubeNode, CubeOrange, CubeOrange-joey, CubeOrangePlus, CubeRedPrimary, CubeRedPrimary-PPPGW, CubeRedSecondary, CubeRedSecondary-IO, CyberX-v10, DAKEFPVH743, DAKEFPVH743_SLIM, DAKEFPVH743Pro, DevEBoxH7v2, Durandal, NucleoH743, NucleoH755, F4BY_H743, flycore, FlyingMoonH743, FlywooH743Pro, FoxeerH743v1, GEPRC_TAKER_H743, GPILOT_P1, GreenSightUltraBlue, H757I_EVAL, H757I_EVAL_intf, Here4AP, Here4FC, HWH7, IFLIGHT_2RAW_H7, JFB110, JFB200, JHEMCU-H743HD, JPilot-C, KakuteH7, KakuteH7v2, KakuteH7-Wing, KakuteH7Mini, KakuteH7Mini-Nand, KARSHAKH743VTOL, kha_eth, KT-FMU-F1, luminousbee5, MambaH743v4, MatekH743, MatekH7A3, MatekH7A3-Wing, MFT-SEMA100, MicoAir743, MicoAir743-AIO, MicoAir743-Lite, MicoAir743v2, Morakot, mRoControlZeroClassic, mRoControlZeroH7, mRoControlZeroOEMH7, mRoCZeroOEMH7, mRoNexus, mRoPixracerPro, NarinFC-H5, NarinFC-H7, NarinFC-X3, NucleoH753ZI, NxtPX4v2, ORBITH743, ORBITH743v2, OrqaH7QuadCore, PilotGaeaSH7V1, PixC4-Jetson, Pixhawk6C, Pixhawk6X, Pixhawk6X-PPPGW, PixPilot-V6, PixPilot-V6PRO, PixSurveyA2-IND, PrincipIoTH7Pi, QioTekZealotH743, RADIX2HD, ResoluteH7, rFCU, SDMODELH7V1, SDMODELH7V2, SequreH743, SIYI-UniFC-6-PICO, SIYI_N7, SkyDroid-S3, SkySakuraH743, SkystarsH7HD, SkystarsH7HDv2, sparknavi-blue, SPEDIXH743, SPRacingH7, SPRacingH7RF, StellarH7V2, SULILGH7-P1-P2, SVehicle-E2, TBS_LUCID_H7, TBS_LUCID_H7_OEM, TBS_LUCID_H7_WING, TBS_LUCID_H7_WING_AIO, TBS_LUCID_H7V3, TMotorH743, uav-dev-fc-um982, VUAV-TinyV7, VUAV-V7pro, X-MAV-AP-H743r1, X-MAV-AP-H743v2, YARIV6X, YJUAV_A6, YJUAV_A6SE, YJUAV_A6SE_H743, YJUAV_A6Ultra, ZeroOneX6, ZeroOneX6_Air
+    "STM32H7xx": [1124, 7120, 1198, 4300, 7110, 1850, 2024, 2509, 1209, 5200, 1146, 5210, 59, 58, 61, 57, 1227, 1025, 1056, 1162, 1168, 1148, 5810, 1182, 1156, 1189, 1229, 7000, 1009, 7001, 7002, 7004, 1010, 1079, 140, 1033, 1063, 1069, 1409, 1070, 5830, 1193, 1208, 1194, 1061, 139, 1531, 1218, 1112, 1181, 1089, 1502, 1275, 1071, 146, 1043, 1223, 1173, 1110, 1200, 1411, 1214, 1048, 1105, 1058, 4002, 1315, 1250, 1029, 1073, 1013, 1149, 1228, 2000, 1166, 1176, 1202, 1179, 1210, 1022, 1023, 1024, 1015, 1017, 1188, 1183, 1199, 1207, 1159, 1191, 1219, 1204, 1213, 1032, 56, 53, 1408, 1083, 1160, 6104, 1248, 1036, 1118, 1445, 1102, 1111, 1167, 1195, 1221, 1215, 1123, 11300, 2714, 1075, 1362, 1196, 1060, 1108, 1503, 2005, 6110, 5250, 5255, 5253, 5254, 5256, 1138, 5230, 7101, 7100, 1203, 1174, 1234, 1113, 1127, 1141, 1144, 5600],  # 3DRControlZeroG, AcctonGodwit_GA1, AEDROXH7, AeroCogito-H7Digital, AEROFOX-H7, Aeromind6X, AET-H743-Basic, AET_H743_Air, AIRBRAINH743, Airvolute-DCS2, AnyleafH7, Aocoda-RC-H743Dual, ARK_FPV, ARK_PI6X, ARKV6S, ARKV6X, Atlas-Control, BeastH7, BeastH7v2, BlitzH743Pro, BlitzWingH743, BotBloxDroneNet, BROTHERHOBBYH743, CBU-H7-LC-Stamp, CBU-H7-Stamp, CORVON743V1, CORVON743V2, CUAV-7-Nano, CUAV-Nora, CUAV-V6X-v2, CUAV-X25-EVO, CUAV-X25-MEGA, CUAV-X7, CubeNode, CubeOrange, CubeOrange-joey, CubeOrangePlus, CubeRedPrimary, CubeRedPrimary-PPPGW, CubeRedSecondary, CubeRedSecondary-IO, CyberX-v10, DAKEFPVH743, DAKEFPVH743_SLIM, DAKEFPVH743Pro, DevEBoxH7v2, Durandal, NucleoH743, NucleoH755, F4BY_H743, flycore, FlyingMoonH743, FlywooH743Pro, FoxeerH743v1, GEPRC_TAKER_H743, GPILOT_P1, GreenSightUltraBlue, H757I_EVAL, H757I_EVAL_intf, Here4AP, Here4FC, HWH7, IFLIGHT_2RAW_H7, JFB110, JFB200, JHEMCU-H743HD, JPilot-C, KakuteH7, KakuteH7v2, KakuteH7-Wing, KakuteH7Mini, KakuteH7Mini-Nand, KARSHAKH743VTOL, kha_eth, KT-FMU-F1, luminousbee5, MambaH743v4, MatekH743, MatekH7A3, MatekH7A3-Wing, MFT-SEMA100, MicoAir743, MicoAir743-AIO, MicoAir743-Lite, MicoAir743v2, Morakot, mRoControlZeroClassic, mRoControlZeroH7, mRoControlZeroOEMH7, mRoCZeroOEMH7, mRoNexus, mRoPixracerPro, NarinFC-H5, NarinFC-H7, NarinFC-X3, NucleoH753ZI, NxtPX4v2, ORBITH743, ORBITH743v2, OrqaH7QuadCore, PilotGaeaSH7V1, PixC4-Jetson, Pixhawk6C, Pixhawk6X, Pixhawk6X-PPPGW, PixPilot-V6, PixPilot-V6PRO, PixSurveyA2-IND, PrincipIoTH7Pi, QioTekZealotH743, RADIX2HD, ResoluteH7, rFCU, SDMODELH7V1, SDMODELH7V2, SequreH743, SIMPLIFLYH7, SIYI-UniFC-6-PICO, SIYI_N7, SkyDroid-S3, SkySakuraH743, SkystarsH7HD, SkystarsH7HDv2, sparknavi-blue, SPEDIXH743, SPRacingH7, SPRacingH7RF, StellarH7V2, SULILGH7-P1-P2, SVehicle-E2, TBS_LUCID_H7, TBS_LUCID_H7_OEM, TBS_LUCID_H7_WING, TBS_LUCID_H7_WING_AIO, TBS_LUCID_H7V3, TMotorH743, uav-dev-fc-um982, VUAV-TinyV7, VUAV-V7pro, X-MAV-AP-H743r1, X-MAV-AP-H743v2, YARIV6X, YJUAV_A6, YJUAV_A6SE, YJUAV_A6SE_H743, YJUAV_A6Ultra, ZeroOneX6, ZeroOneX6_Air
     "STM32L431": [1165, 1109, 1080, 6100, 1050, 5302, 1091, 1093, 1094, 5252, 5222, 1407, 5820],  # 3DR-L431-ASAUAV, AeroFox-GNSS_F9P, AeroFox-PMU, MFE_PDB_CAN, Sierra-L431, Sierra-TrueNavIC, Sierra-TrueNavPro, Sierra-TrueNorth, Sierra-TrueSpeed, TBS-L431-BattMon, TBS-L431-CurrMon, TBS-L431-PWM, uav-dev_m10s, VM-L431-BatteryTag, VM-L431-Periph-Pico, VM-L431-SRV-Hub-4CHP, VM-L431-BMS
     "STM32L476": [1051],  # Nucleo-L476
     "STM32L496": [1047],  # Nucleo-L496
